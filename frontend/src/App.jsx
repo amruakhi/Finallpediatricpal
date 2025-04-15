@@ -7,6 +7,7 @@ import Login from './components/Login';
 import SignupPediatrician from './components/SignupPediatrician';
 import SignupParent from './components/SignupParent';
 import Adminhome from './components/admin/Adminhome';
+import PrivateRoutes from './components/Privateroutes';
 
 const App = () => {
   return (
@@ -17,7 +18,9 @@ const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/signup-pediatrition" element={<SignupPediatrician />} />
       <Route path="/signup-parent" element={<SignupParent />} />
-      <Route path="/adminhome" element={<Adminhome />} />
+      <Route element={<PrivateRoutes />}>
+        <Route path="/adminhome" element={<Adminhome />} />
+      </Route>
     </Routes>
   );
 };

@@ -24,6 +24,7 @@
     "react-router-dom": "^7.4.1",
     "react-slick": "^0.30.3",
     "react-spring": "^9.7.5",
+    "recharts": "^2.15.2",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
